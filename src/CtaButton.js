@@ -14,7 +14,7 @@ export class CtaButton extends LitElement {
         color: #000;
         font-family: copperplate, fantasy;
       }
-      // adding focus to hover command allows button to change color when tabbed to
+     
       .cta-button:hover,
       :focus {
         background-color: #cf9fff;
@@ -37,7 +37,7 @@ export class CtaButton extends LitElement {
     `;
   }
 
-  // defining properties & their types
+  
   static get properties() {
     return {
       buttonText: { Type: String },
@@ -46,7 +46,7 @@ export class CtaButton extends LitElement {
     };
   }
 
-  // turned text and link into variables
+  
   constructor() {
     super();
     this.buttonText = 'Check out my channel!';
@@ -54,7 +54,7 @@ export class CtaButton extends LitElement {
     this.icon = 'av:videocam';
   }
 
-  // called variables into HTML code
+  
   render() {
     return html`
       <div class="button-wrapper">
